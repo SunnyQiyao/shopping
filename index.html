@@ -2,11 +2,29 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>shopping</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <title>shoppingmall</title>
+    <!--以iphone5为例，320px 1rem=16px  320px/20=16px/1 -->
+    <!--750px 1rem=100px  750px=7.5rem-->
+    <link rel="" type="" href="http://at.alicdn.com/t/font_639500_62pt4v8b519ejyvi.css">
   </head>
   <body>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
+    <!-- built files will be auto injected --> 
+    <div id="app">
+       <i class="icon iconfont icon-huiyuanzhongxin"></i>
+    </div>
+   
+
+    <script>
+      // 使用rem适配不同的屏幕
+      let htmlWidth=document.documentElement.clientWidth||document.body.clientWidth;
+      // 解决屏幕过大时字体过大的问题
+      if(htmlWidth>750){htmlWidth=750}
+      // 获取Html DOM 元素
+      let htmlDom=document.getElementsByTagName('html')[0];  // 是一个数组
+      // 设置根元素的大小
+      htmlDom.style.fontSize=htmlWidth/20+'px';
+    </script>
+
   </body>
 </html>

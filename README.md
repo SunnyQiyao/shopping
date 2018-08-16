@@ -1,4 +1,4 @@
-# shopping
+# smilevue
 
 > A Vue.js project
 
