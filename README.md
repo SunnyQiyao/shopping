@@ -17,5 +17,6 @@ npm run build
 # build for production and view the bundle analyzer report
 npm run build --report
 ```
+![商城首页图片](https://github.com/sunny/shopping/raw/master/images/shoppingmall.png)
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
